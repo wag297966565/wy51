@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- <script>
+		//函数的三种声明方式
+			//普通的声明方式
+			function myFun(m,n){
+					alert(m+n);
+				}
+			myFun(2,3);
+			//用变量声明函数
+			var fun=function(m,n){
+					alert(m+n);
+				}
+			fun(3,4);
+			//使用构造函数声明一个函数
+			var funn=new Function('m','n','alert(m+n)')
+			funn(3,5)
+	</script> -->
+
+	<!-- <script>
+		//将函数作为另一个函数的参数（回调函数）
+		function text1(){
+			alert('我是text1');
+			}
+		function text2(){
+			}
+		text2(text1());
+		//将函数作为参数
+		function text(x,y){
+			return x+y();
+			}
+		function y(){
+			return 100;
+			}
+		alert(text(200,y));
+
+		function text3(i,u){
+			return i+u(i);
+			}
+		function u(i){
+			return i*i;
+			}
+		alert(text3(10,u));
+	</script> -->
+
+
+	<!-- <script>
+		//使用函数的返回值作为另一个函数的参数
+		function u(x){
+			return x*x;
+			}
+		function text3(x,u){
+			return x+u;
+		}
+		alert(text3(10,u(10)))	//这里和上一个的区别----这里u(10)引用的是函数的返回值	
+		alert(u(10));	//这里的u(10)引用的是函数的返回值
+		alert(u);  //这里的u引用的是函数本身
+
+
+		function checkNum(start,end,check){
+			for(i=start;i<end;i++){
+				if(check(i)){
+					document.write(i+'<br>')
+				}
+			}
+		}
+		function check(x){
+			if(x%3==0){
+				return true;
+			}else{
+				return false;
+			}
+		}
+		checkNum(1,20,check)
+		document.write('<h3>陈年老醋</h3>');
+		document.write('陈年老醋陈年老醋陈年老醋<br />陈年老醋陈年老醋<hr />')
+		</script> -->
+</head>
+<body>
+<!-- 	<input type="button" value="点击这里" onclick="alert('欢迎来到javascript世界')"> -->
+	<!-- <script>
+		document.write('<li>列表1</li><li>列表2</li>');
+
+
+		//字符串类型
+		var a='hello';
+		alert(a)
+		var b='先生'
+		alert(a+b);
+		var c='\"';
+		alert(c);
+
+
+		var str1='我是通过换行符换行的\n';
+		var str2='我是通过回车符换行的\r';
+		var str3='我是................';
+		var str=str1+str2+str3;
+		alert(str);
+	</script> -->
+
+
+	<!-- <script>
+		//数据类型
+		var a=10;
+		var b=10.05;
+		var c=3.14e6;
+		alert(a);
+		alert(b);
+		alert(c);
+	</script> -->
+	<!-- <script>
+		//数值通过运算符计算
+		var a=10;
+		var b=20;
+		var c=a+b;
+		alert(c)
+		//小数精度精确到第17位
+		var d=0.1;
+		var e=0.2;
+		var f=d+e;
+		alert(f);
+	</script> -->
+	<!-- <script>
+		//八进制和十六进制
+		var a=0277;
+		alert(a);
+		var b=0xabcd;
+		alert(b);
+	</script> -->
+
+
+	<!-- <script>
+		//布尔值类型
+		var a=true;
+		var b=false;
+		if(b){
+			alert('布尔值为真')
+		}else{
+			alert('布尔值为假')
+		}
+		var m=3;
+		var n=5;
+		alert(m>n);//反之弹出true
+	</script> -->
+
+
+	<!-- <script>
+		//Undefined
+		var a=1;
+		var b;
+		alert(typeof a);
+		alert(typeof b);
+		alert(typeof c);
+	</script> -->
+
+
+	<!-- <script>
+		//数组
+		var a=['数组元素1','数组元素2','数组元素3','数组元素4'];
+		var a1=new Array('数组元素a','数组元素b','数组元素c','数组元素d');
+		var a2=new Array();
+			a2[0]='数组元素yi';
+			a2[1]='数组元素er';
+			a2[2]='数组元素san';
+		alert(a[2]);
+		alert(a1[2]);
+		alert(a2[2]);
+		alert(typeof a);
+	</script>
+ -->
+
+	<!-- <script>
+		//对象Object
+		var person={name:'小明',age:18,job:'CEO',sex:'man'};
+		alert(person.age)
+	</script> -->
+
+
+
+	<!-- <script>
+		//计算矩形的面积
+		var a=20;
+		var b=30;
+		var c=a*b;
+		document.write('矩形的宽度为:'+a+'<br />');
+		document.write('矩形的长度为:'+b+'<br />');
+	</script>
+	<input type="button" value="计算面积" onclick="alert('矩形面积为:'+c)"> -->
+	<!-- <script>
+		//鸡兔同笼
+		//头35个，脚94个
+		//兔有几只，鸡有几只
+		var head=35;
+		var foot=94;
+		var num=foot-2*head;
+		var rabbit=num/2;
+		var chicken=head-rabbit;
+		document.write('头的数量:'+head+'<br />');
+		document.write('脚的数量:'+foot+'<br />');
+	</script> -->
+<!-- 	<input type="button" value="鸡的数量" onclick="alert(chicken+'只')">
+	<input type="button" value="兔的数量" onclick="alert(rabbit+'只')"> -->
+
+
+	<!-- <script>
+		//a和b的值交换
+		var a=30;
+		var b=20;
+		document.write('交换前a和b的值分别为:'+'<br />');
+		document.write('<li>a的值为:'+a+'<br />');
+		document.write('<li>b的值为:'+b+'<br />');
+		var c=a;
+		a=b;
+		b=c;
+		document.write('交换后a和b的值分别为:'+'<br />');
+		document.write('<li>a的值为:'+a+'<br />');
+		document.write('<li>b的值为:'+b+'<br />');
+
+		//建立一个数组
+		var vip=new Array('白金会员','黄金会员','青铜会员','普通会员');
+		document.write('<h3>会员等级</h3>');
+		document.write('<li>'+vip[0]);
+		document.write('<li>'+vip[1]);
+		document.write('<li>'+vip[2]);
+		document.write('<li>'+vip[3]);
+	</script> -->
+</body>
+</html>
+	
